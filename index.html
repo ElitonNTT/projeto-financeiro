@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <title>Projeto - Financeiro</title>
+</head>
+
+<body>
+  <!--Header-->
+  <div id="main-header">
+    <div class="main-logo">
+    <img src="/assets/logo.png" alt="logo">
+    <h2>Controle Financeiro</h2>
+  </div>
+    <nav id="main-nav">
+      <ul>
+        <li><a href="#"> Limpar Dados</a></li>
+        <li><a href="#"> Cadastro de Transações</a></li>
+        <li><a href="#"> Salvar no Servidor</a></li>
+      </ul>
+    </nav>
+    <div class="hamb-menu">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <!--box-transação-->
+  <div class="main-container">
+    <div class="box-trans">
+      <h2>Nova transação</h2>
+      <form>
+      <label id="subtitulo">Tipo da Transação</label>
+      <select class="inputbox1" name="tipo-trans" id="tipo-trans">
+        <option value="Selecoine" selected>--Selecione--</option>
+        <option value="Compra">Compra</option>
+        <option value="Venda">Venda</option>
+      </select>
+      <label id="subtitulo">Nome da Mercadoria</label>
+      <input class="inputbox1" type="text" placeholder="input">
+      <label id="subtitulo">Valor</label>
+      <input class="inputbox1" type="number" placeholder="R$10,90">
+      <input class="inputbox1" type="submit" value="Adicionar Transação">
+    </div>
+  </form>
+    <!--Box-Extrato-->
+    <div class="box-extract">
+      <h2>Extrato de Transações</h2>
+      <div class="subtitulo-extract">
+        <h3>Mercadoria</h3>
+        <h3>Valor</h3>
+      </div>
+      <table id="tabela-extract">
+
+      </table>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+*{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+/* ---HEADER---*/
+#main-header{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  background-color: #979797;
+}
+.main-logo{
+  display: flex;
+  align-items: center;
+}
+#main-nav{
+  width: 350px;
+  height: 40px;
+}
+#main-nav ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Container */
+.main-container{
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
+/*---BOX-TRANSAÇÃO---*/
+
+.box-trans{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 26.6%;
+  height: fit-content;
+  margin: 30px 20px;
+  border: 1px solid  #979797;
+  border-radius: 4px;
+}
+.box-trans form{
+  width: 90%;
+}
+.box-trans h2{
+  margin: 5%;
+}
+.inputbox1{
+  width: 100%;
+  margin-bottom: 5%;
+}
+input[type="submit"]{
+  background: #000000;
+  color: #fff;
+  border: none;
+}
+
+/*---BOX-EXTRACT---*/
+.box-extract{
+  width: 43.3%;
+  height: fit-content;
+  margin-top: 30px;
+  border: 4px solid #000;
+}
+.box-extract h2{
+  text-align: center;
+  width: 100%;
+}
+.subtitulo-extract{
+  display: flex;
+  justify-content: space-between;
+}
