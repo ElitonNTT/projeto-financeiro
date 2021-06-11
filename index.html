@@ -13,11 +13,17 @@
 
 <body>
   <!--Header-->
+
   <div id="main-header">
     <div class="main-logo">
-    <img src="/assets/logo.png" alt="logo">
-    <h2>Controle Financeiro</h2>
-  </div>
+      <img src="/assets/logo.png" alt="logo">
+      <h2>Controle Financeiro</h2>
+      <div class="hamb-menu">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
     <nav id="main-nav">
       <ul>
         <li><a href="#"> Limpar Dados</a></li>
@@ -25,30 +31,25 @@
         <li><a href="#"> Salvar no Servidor</a></li>
       </ul>
     </nav>
-    <div class="hamb-menu">
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
   </div>
   <!--box-transação-->
   <div class="main-container">
     <div class="box-trans">
       <h2>Nova transação</h2>
       <form>
-      <label id="subtitulo">Tipo da Transação</label>
-      <select class="inputbox1" name="tipo-trans" id="tipo-trans">
-        <option value="Selecoine" selected>--Selecione--</option>
-        <option value="Compra">Compra</option>
-        <option value="Venda">Venda</option>
-      </select>
-      <label id="subtitulo">Nome da Mercadoria</label>
-      <input class="inputbox1" type="text" placeholder="input">
-      <label id="subtitulo">Valor</label>
-      <input class="inputbox1" type="number" placeholder="R$10,90">
-      <input class="inputbox1" type="submit" value="Adicionar Transação">
+        <label id="subtitulo">Tipo da Transação</label>
+        <select class="inputbox1" name="tipo-trans" id="tipo-trans">
+          <option value="Selecione" selected>--Selecione--</option>
+          <option value="Compra">Compra</option>
+          <option value="Venda">Venda</option>
+        </select>
+        <label id="subtitulo">Nome da Mercadoria</label>
+        <input class="inputbox1" type="text" placeholder="input">
+        <label id="subtitulo">Valor</label>
+        <input class="inputbox1" type="number" placeholder="R$10,90">
+        <input class="inputbox1" type="submit" value="Adicionar Transação">
     </div>
-  </form>
+    </form>
     <!--Box-Extrato-->
     <div class="box-extract">
       <h2>Extrato de Transações</h2>
@@ -57,6 +58,14 @@
         <h3>Valor</h3>
       </div>
       <table id="tabela-extract">
+        <tr>
+          <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</td>
+          <td>R$12.999,00</td>
+        </tr>
+        <tr>
+          <td>Total</td>
+          <td>R$12.999,00</td>
+        </tr>
 
       </table>
     </div>
