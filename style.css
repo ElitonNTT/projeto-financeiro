@@ -10,11 +10,13 @@
   position: relative;
   display: flex;
   justify-content: space-around;
-  padding: 0% 2%;
   align-items: center;
   width: 100%;
   height: 80px;
   background: #E0E0E0;
+}
+.hamb-menu{
+  display: none;
 }
 .hamb-menu div{
   display: none;
@@ -31,6 +33,14 @@
 .main-logo{
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+.main-logo h2{
+  justify-content: left;
+  align-items: left;
+  display: flex;
+  float: left;
+
 }
 #main-nav{
   width: 350px;
@@ -65,6 +75,9 @@
   width: 100%;
   height: 100%;
   justify-content: center;
+}
+#hamb-nav{
+  display: none;
 }
 
 /*---BOX-TRANSAÇÃO---*/
@@ -152,78 +165,7 @@ tr{
   border-bottom: 1px solid #979797;
 }
 
-@media screen and (max-width:411px){
-  .main-container{
-    display: flex;
-    padding: 0;
-    height: fit-content;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-  #main-header{
-    padding: 0% 5%;
-  }
-  .main-logo{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-  }
-  #main-nav{
-    display: none;
-  }
-  .hamb-menu{
-    justify-content: center;
-    align-items: center;
-  }
-  .hamb-menu div{
-    width: 20px;
-    height: 6px;
-    align-items: center;
-    position: relative;
-    display: flex;
-  }
-  .hamb-menu:hover{
-    position: absolute;
-    padding-right: none;
-    width: 84.5%;
-    height: 100%;
-    background-color: #333;
-  }
-  .hamb-navigation{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    width: 90%;
-    height: 100%;
-    z-index: 1000;
-  }
-  .hamb-nav a{
-    text-decoration: none;
-  }
-  /*---box-transação---*/
-  .box-trans{
-    width: 90%;
-    margin:  2%;
-    border: none;
-    border-bottom: 1px solid #979797;
-  }
-  .box-trans form{
-    width: 100%;
-  }
-  .box-trans h2{
-    display: none;
-  }
-  /*---box-extract---*/
-  .box-extract{
-    width: 90%;
-    padding: 0;
-    margin: 0;
-  }
-
-  /*
-@media screen and (max-width:768px){
+@media screen and (max-width:768px) and (min-width:411px){
   .main-container{
     display: flex;
     padding: 0;
@@ -270,5 +212,96 @@ tr{
   }
   .box-trans .inputbox1{
     width: 50%
+  }
+}
+@media screen and (max-width:411px){
+  *{
+    padding: none;
+    margin: none;
+    box-sizing: border-box;
+  }
+  #main-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-logo{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+  }
+  #main-header h2{
+    width: 90%;
+    justify-content: center;
+  }
+  .main-container{
+    display: flex;
+    padding: 0;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #main-nav{
+    display: none;
+  }
+  /*HAMURGER MENU */
+  .hamb-menu{
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    height: 6vh;
+  }
+  .hamb-menu div{
+    width: 20px;
+    height: 6px;
+    align-items: center;
+    position: relative;
+    display: flex;
+  }
+  #hamb-nav{
+    display: none;
+  }
+  .hamb-menu:hover{
+    position: fixed;
+    background-color: cover;
+    display: flex;
+    width:100%;
+    height: 1000%;
+    margin-left: 20% ;
+    background-color: #333;
+    z-index: 1000;
+  }
+  .hamb-menu:hover #hamb-nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  #hamb-nav a{
+    text-decoration: none;
+  }
+
+
+  /*---box-transação---*/
+  .box-trans{
+    width: 90%;
+    margin:  2%;
+    border: none;
+    border-bottom: 1px solid #979797;
+  }
+  .box-trans form{
+    width: 100%;
+  }
+  .box-trans h2{
+    display: none;
+  }
+  /*---box-extract---*/
+  .box-extract{
+    width: 90%;
+    padding: 0;
+    margin: 0;
   }
 }
