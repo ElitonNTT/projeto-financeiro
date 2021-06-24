@@ -46,18 +46,28 @@
     <div class="box-trans">
       <h2>Nova transação</h2>
       <form>
-        <label id="subtitulo">Tipo da Transação</label>
-        <select class="inputbox1" name="tipo-trans" id="tipo-trans">
-          <option value="Selecione" selected>--Selecione--</option>
-          <option value="Compra">Compra</option>
-          <option value="Venda">Venda</option>
-        </select>
-        <label id="subtitulo">Nome da Mercadoria</label>
-        <input class="inputbox1" type="text" placeholder="input">
+        <div class="form-box">
+        <div class="trans-input1">
+          <label id="subtitulo">Tipo da Transação</label>
+          <select class="inputbox1" name="tipo-trans" id="tipo-trans">
+            <option value="Selecione" selected>--Selecione--</option>
+            <option value="Compra">Compra</option>
+            <option value="Venda">Venda</option>
+          </select>
+        </div>
+        <div class="trans-input2">
+          <label id="subtitulo">Nome da Mercadoria</label>
+          <input class="inputbox1" type="text" placeholder="input">
+        </div>
+        <div class="trans-input1">
         <label id="subtitulo">Valor</label>
         <input class="inputbox1" type="number" placeholder="R$10,90">
-        <input class="inputbox1" type="submit" value="Adicionar Transação">
+      </div>
     </div>
+      <div class="submit-btn">
+        <input class="inputbox1" type="submit" value="Adicionar Transação">
+      </div>
+      </div>
     </form>
     <!--Box-Extrato-->
     <div class="box-extract">
