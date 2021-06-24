@@ -240,7 +240,7 @@ tr{
     right: 0;
     background-color: cover;
     display: flex;
-    width:30%;
+    width:50%;
     height: 200%;
     background-color: #333;
     z-index: 1;
@@ -297,6 +297,7 @@ tr{
   .box-trans form{
     display: flex;
     flex-wrap: wrap;
+    height: 30vh;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -306,6 +307,9 @@ tr{
   }
   .box-trans .inputbox1{
     width: 50%
+  }
+  .inputbox1 {
+    margin: 0;
   }
   /*---box-extração---*/
   .box-extract{
