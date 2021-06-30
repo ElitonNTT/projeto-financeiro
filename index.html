@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css" type="text/css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <script type="text/javascript" src="script.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
   <title>Projeto - Financeiro</title>
 </head>
@@ -45,7 +44,7 @@
   <div class="main-container">
     <div class="box-trans">
       <h2>Nova transação</h2>
-      <form>
+      <form id="formulario">
         <div class="form-box">
         <div class="trans-input1">
           <label id="subtitulo">Tipo da Transação</label>
@@ -57,15 +56,15 @@
         </div>
         <div class="trans-input2">
           <label id="subtitulo">Nome da Mercadoria</label>
-          <input class="inputbox1" type="text" placeholder="input">
+          <input class="inputbox1" type="text" placeholder="input" id="nomeMercadoria">
         </div>
         <div class="trans-input1">
         <label id="subtitulo">Valor</label>
-        <input class="inputbox1" type="number" placeholder="R$10,90">
+        <input class="inputbox1" type="number" placeholder="R$10,90" id="Valor">
       </div>
     </div>
       <div class="submit-btn">
-        <input class="inputbox1" type="submit" value="Adicionar Transação">
+        <input class="inputbox1" type="button" value="Adicionar Transação" id="submit-button" onclick="dadosRecebidos()">
       </div>
       </div>
     </form>
@@ -89,5 +88,5 @@
     </div>
   </div>
 </body>
-
+<script type="text/javascript" src="script.js"></script>
 </html>
