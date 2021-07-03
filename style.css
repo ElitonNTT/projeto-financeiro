@@ -191,11 +191,7 @@ tr{
   }
 }
 
-<<<<<<< HEAD
 @media screen and (max-width:768px) and (min-width:626px){
-=======
-@media screen and (max-width:768px) and (min-width:625px){
->>>>>>> c0534aeef25e5518a755cf3a0b18f1eeb05fd22d
   .main-container{
     display: flex;
     padding: 0;
@@ -344,11 +340,7 @@ tr{
     margin: 0;
   }
 }
-<<<<<<< HEAD
 @media screen and (max-width:625px){
-=======
-@media screen and (max-width:624px){
->>>>>>> c0534aeef25e5518a755cf3a0b18f1eeb05fd22d
   *{
     padding: none;
     margin: none;
