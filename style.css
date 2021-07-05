@@ -43,8 +43,10 @@
 
 }
 #main-nav{
-  width: 350px;
-  height: 40px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #main-nav a{
   color: #333;
@@ -52,13 +54,18 @@
 }
 #main-nav ul{
   display: flex;
+  height: 50%;
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
 }
 #main-nav li{
+  display: flex;
   text-align: center;
+  align-items: center;
+  height: 100%;
   border-left: 1px #000 solid;
+  padding: 0 2px;
 }
 #main-nav li:first-child{
   border: none;
