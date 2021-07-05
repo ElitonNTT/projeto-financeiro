@@ -166,7 +166,7 @@ input[type="button"]:hover{
 
 #tabela-extract{
   width: 100%;
-  height: auto;
+  height: 40%;
 }
 tr{ 
   font-size: 14px;
@@ -176,6 +176,7 @@ tr{
   border: none;
   padding: 2% 0%;
   border-bottom: 1px solid #979797;
+  overflow: hidden;
 }
 @media screen and (max-width:1112px) and (min-width:768px){
   .main-container{
@@ -197,7 +198,7 @@ tr{
   }
 }
 
-@media screen and (max-width:768px) and (min-width:625px){
+@media screen and (max-width:768px) and (min-width:626px){
   .main-container{
     display: flex;
     padding: 0;
@@ -346,7 +347,7 @@ tr{
     margin: 0;
   }
 }
-@media screen and (max-width:624px){
+@media screen and (max-width:625px){
   *{
     padding: none;
     margin: none;
