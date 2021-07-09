@@ -169,7 +169,7 @@ input[type="button"]:hover{
   text-align: center;
   width: 100%;
 }
-.subtitulo-extract{
+.subtitulos-extrato{
   display: flex;
   padding: 2%;
   justify-content: space-between;
@@ -180,6 +180,7 @@ input[type="button"]:hover{
 #tabela-extract{
   width: 100%;
   height: 40%;
+  overflow: hidden;
 }
 tr{ 
   font-size: 14px;
@@ -189,15 +190,15 @@ tr{
   border: none;
   padding: 2% 0%;
   border-bottom: 1px solid #979797 ;
-  overflow: hidden;
 }
-  thead, tfoot{
-    color: #000;
-    font-size: 14px;
-    line-height: 22px;
-    font-weight: bold;
-  }
-  
+
+.subtitulo-extrato{
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  margin-left: auto;
+}
+
 
 @media screen and (max-width:1112px) and (min-width:768px){
   .main-container{
@@ -428,7 +429,7 @@ tr{
     background-color: cover;
     display: flex;
     width:85%;
-    height: 200%;
+    height: 200vh;
     background-color: #333;
     z-index: 1;
   }

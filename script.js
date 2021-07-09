@@ -2,6 +2,14 @@ function dadosRecebidos(){
   var tipoTrans = document.getElementById("tipo-trans").value
   var nomeMercadoria = document.getElementById("nomeMercadoria").value
   var Valor = document.getElementById("Valor").value
+  var auxiliar = document.getElementById("tipo-trans").value
+
+if(auxiliar == "Compra"){
+  auxiliar = "+"
+}
+if(auxiliar == "Venda"){
+  auxiliar = "-"
+}
 
   if(tipoTrans ==="Selecione"||nomeMercadoria==""||Valor==""){
     alert("Preencha os Campos!")
@@ -16,8 +24,8 @@ function dadosRecebidos(){
     var col2 = novaLinha.insertCell(1);
     var col3 = novaLinha.insertCell(2);
 
-    col1.innerHTML =  tipoTrans;
-    col2.innerHTML = nomeMercadoria;
+    col1.innerHTML = auxiliar
+    col2.innerHTML =  nomeMercadoria;
     col3.innerHTML = Valor;
   }
 }
