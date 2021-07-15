@@ -39,5 +39,12 @@ function limparDados(){
 
   localStorage.clear()
   location.reload();
+}
+
+function calcularLucro(){
+
+
+
+
 
 }
