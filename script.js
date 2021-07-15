@@ -1,10 +1,12 @@
+var lista = []
 function dadosRecebidos(){
 
     var tipoTrans = document.getElementById("tipo-trans").value
     var nomeMercadoria = document.getElementById("nomeMercadoria").value
     var Valor = document.getElementById("Valor").value
     var auxiliar = document.getElementById("tipo-trans").value
-
+  
+    /* Validação */
    if(auxiliar == "Compra"){
       auxiliar = "+"
     }
@@ -14,7 +16,8 @@ function dadosRecebidos(){
     if(tipoTrans ==="Selecione"||nomeMercadoria==""||Valor==""){
       alert("Preencha os Campos!")
       location.reload();
-    }else{
+      
+    }else{ /* Inserir linha  se passar na validação*/
     var tabela = document.getElementsByTagName("table")[0];
     var novaLinha = tabela.insertRow(-1);
   
@@ -25,6 +28,10 @@ function dadosRecebidos(){
     col1.innerHTML = auxiliar
     col2.innerHTML =  nomeMercadoria;
     col3.innerHTML = Valor
+
+    lista.push({tipo:tipoTrans,nome:nomeMercadoria, valor:Valor})
+    console.log("lista", lista)
+    localStorage.setItem("lista", JSON.stringify(lista))
     }
 }
 
@@ -32,36 +39,5 @@ function limparDados(){
 
   localStorage.clear()
   location.reload();
-
-}
-function salvarDados(){
-
-  let array = []
-  
-  let tipoStorage = document.querySelector("tipo-trans")
-
-  let nomeStorage = document.querySelector("nomeMercadoria")
- 
-  let valorStorage = document.querySelector("Valor")
-
-  array = {tipo: tipoStorage, nome:nomeStorage,valor: valorStorage}
-
-  localStorage.setItem("table", JSON.stringify(array))
-
-}
-function cadastro(){
-
-
-}
-
-function validacao(){
-
-
-}
-
-function calcularLucro(){
-
-
-
 
 }
