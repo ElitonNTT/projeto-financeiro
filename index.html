@@ -20,9 +20,11 @@
     </div>
     <nav id="main-nav">
       <ul>
-        <li><a href="#"> Limpar Dados</a></li>
-        <li><a href="#"> Cadastro de Transações</a></li>
-        <li><a href="#"> Salvar no Servidor</a></li>
+        <li><a id="limpar" href="#" onclick="limparDados()"> Limpar Dados</a></li>
+        <div id="barrinha"></div>
+        <li><a id="cadastro"href="#"> Cadastro de Transações</a></li>
+        <div id="barrinha"></div>
+        <li><a id="salvar" type="button" onclick="salvarDados()" style="cursor: pointer"> Salvar no Servidor</a></li>
       </ul>
     </nav>
     <div class="hamb-menu">
@@ -56,11 +58,11 @@
         </div>
         <div class="trans-input2">
           <label id="subtitulo">Nome da Mercadoria</label>
-          <input class="inputbox1" type="text" placeholder="input" id="nomeMercadoria">
+          <input class="inputbox1" type="text" placeholder="input" id="nomeMercadoria" required>
         </div>
         <div class="trans-input1">
         <label id="subtitulo">Valor</label>
-        <input class="inputbox1" type="number" placeholder="R$10,90" id="Valor">
+        <input class="inputbox1" type="number" placeholder="R$10,90" id="Valor" required>
       </div>
     </div>
       <div class="submit-btn">
@@ -71,16 +73,18 @@
     <!--Box-Extrato-->
     <div class="box-extract">
       <h2>Extrato de Transações</h2>
-      <div class="subtitulo-extract">
-        <h3>Mercadoria</h3>
-        <h3>Valor</h3>
+      <div class="subtitulo-extrato">
+      <h3>Mercadoria</h3>
+      <h3>Valor</h3>
       </div>
       <table id="tabela-extract">
         <tr>
-          <td>Total</td>
-          <td>Valor X</td>
         </tr>
       </table>
+      <div id="resultado-extrato">
+        <span>Total</span>
+        <span id="resultado"></span>
+      </div>
     </div>
   </div>
 </body>
